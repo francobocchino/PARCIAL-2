@@ -179,3 +179,100 @@ footer {
     border-radius: 8px;
     text-decoration: none;
 }
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+
+    .nav {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 130px;
+        padding: 0;
+    }
+
+    .inicio p {
+        width: 60%;
+    }
+
+    .foto-obx {
+        margin: 25px 0;
+        text-align: center;
+    }
+
+    .foto-obx img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .sobre-serie {
+        width: 75%;
+        box-sizing: border-box;
+    }
+
+    .abajo {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .abajo video {
+        width: 45%;
+        height: auto;
+        padding: 0;
+    }
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px;
+    }
+
+    .nav a:first-child {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav a {
+        margin: 0;
+        font-size: 11px;
+    }
+
+    .inicio {
+        padding: 30px 5%;
+    }
+
+    .inicio h1 {
+        font-size: 28px;
+    }
+
+    .inicio p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .sobre-serie {
+        width: 90%;
+        padding: 20px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .abajo video {
+        width: 100%;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
