@@ -82,9 +82,9 @@ header {
 
 .sobre-serie {
     background-color: rgba(2, 2, 2, 0.432);
-    width: 29%;
+    width: 80%;
     margin: auto;
-    padding: 20px;
+    padding: 30px;
     font-family: "Helvetica", sans-serif;
     font-size: 11.5px;
     line-height: 1.18;
@@ -92,9 +92,18 @@ header {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
-    
+    box-sizing: border-box;
+    max-width: 1100px;
     
 }
+
+.sobre-serie ul {
+    width: fit-content;
+    margin: 20px auto;
+    padding-left: 20px;
+    text-align: left;
+}
+
 .abajo{
     display: flex
 }
@@ -117,75 +126,41 @@ footer {
 
 
 
-/* TABLET */
+/* TABLET Y CELULAR */
 
 @media (max-width: 1024px) {
-
-    .nav {
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .logo {
-        width: 130px;
-        padding: 0;
-    }
-
-    .inicio p {
-        width: 60%;
-    }
-
-    .foto-obx {
-        margin: 25px 0;
-        text-align: center;
-    }
-
-    .foto-obx img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .sobre-serie {
-        width: 75%;
-        box-sizing: border-box;
-    }
-
-    .abajo {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .abajo video {
-        width: 45%;
-        height: auto;
-        padding: 0;
-    }
-}
-
-/* CELULAR */
-
-@media (max-width: 600px) {
 
     header {
         padding: 15px;
     }
 
-    .nav a:first-child {
-        width: 100%;
+    .nav {
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         justify-content: center;
+        gap: 12px;
     }
 
     .nav a {
         margin: 0;
-        font-size: 11px;
+        font-size: 12px;
+    }
+
+    .nav a:first-child {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        width: 110px;
+        max-width: 100%;
+        height: auto;
+        padding: 0;
     }
 
     .inicio {
+        display: block;
         padding: 30px 5%;
     }
 
@@ -196,20 +171,78 @@ footer {
     .inicio p {
         width: 100%;
         font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .foto-obx {
+        margin: 25px 0 0;
+        text-align: center;
+    }
+
+    .foto-obx img {
+        width: 57px;
+        max-width: 100%;
+        height: auto;
     }
 
     .sobre-serie {
-        width: 90%;
+        display: block;
+        width: 85%;
+        margin: 25px auto;
         padding: 20px;
+        box-sizing: border-box;
         font-size: 14px;
         line-height: 1.5;
     }
 
+    .sobre-serie h2 {
+        font-size: 20px;
+    }
+
+    .sobre-serie h3 {
+        font-size: 16px;
+    }
+
+    .abajo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
     .abajo video {
-        width: 100%;
+        width: calc(50% - 8px);
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        box-sizing: border-box;
+        border-radius: 15px;
     }
 
     footer {
         padding: 15px;
+        margin-top: 20px;
+    }
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .nav a {
+        font-size: 10px;
+    }
+
+    .inicio h1 {
+        font-size: 24px;
+    }
+
+    .sobre-serie {
+        width: 90%;
+    }
+
+    .abajo video {
+        width: 100%;
     }
 }

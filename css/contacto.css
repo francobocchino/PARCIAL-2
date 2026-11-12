@@ -14,6 +14,14 @@ body {
     color: rgba(255, 255, 255, 0.815);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 a {
@@ -119,7 +127,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.815);
     color: white;
     font-size: 12px;
-    margin-top: 30px;
+    margin-top: auto;
+   
 }
 
 
@@ -184,48 +193,101 @@ footer {
 
 @media (max-width: 1024px) {
 
+    header {
+        padding: 15px;
+    }
+
     .nav {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 15px;
+        gap: 12px;
     }
 
-    .logo {
-        width: 130px;
-        padding: 0;
+    .nav a {
+        margin: 0;
+        font-size: 12px;
     }
 
-    .inicio p {
-        width: 60%;
-    }
-
-    .foto-obx {
-        margin: 25px 0;
+    .nav a:first-child {
+        width: 100%;
         text-align: center;
     }
 
-    .foto-obx img {
+    .logo {
+        width: 110px;
         max-width: 100%;
         height: auto;
-    }
-
-    .sobre-serie {
-        width: 75%;
-        box-sizing: border-box;
-    }
-
-    .abajo {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .abajo video {
-        width: 45%;
-        height: auto;
         padding: 0;
+    }
+
+    .contacto {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+        width: 90%;
+        margin: 35px auto;
+    }
+
+    .contacto1,
+    .formulario {
+        box-sizing: border-box;
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 25px;
+        overflow-wrap: break-word;
+    }
+
+    .contacto1 h1 {
+        font-size: 28px;
+    }
+
+    .contacto1 h2,
+    .formulario h2 {
+        font-size: 24px;
+    }
+
+    .formulario .rectangulo,
+    .formulario .descripcion {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .formulario .enviar {
+        width: auto;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .resultado {
+        box-sizing: border-box;
+        width: 90%;
+        margin: 40px auto;
+        padding: 25px;
+        overflow-wrap: break-word;
+    }
+
+    .resultado h1 {
+        font-size: 28px;
+    }
+
+    .resultado h2 {
+        font-size: 22px;
+    }
+
+    .resultado p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .boton-volver {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 20px;
     }
 }
 
@@ -233,46 +295,29 @@ footer {
 
 @media (max-width: 600px) {
 
-    header {
-        padding: 15px;
-    }
-
-    .nav a:first-child {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
     .nav a {
-        margin: 0;
-        font-size: 11px;
+        font-size: 10px;
     }
 
-    .inicio {
-        padding: 30px 5%;
-    }
-
-    .inicio h1 {
-        font-size: 28px;
-    }
-
-    .inicio p {
-        width: 100%;
-        font-size: 14px;
-    }
-
-    .sobre-serie {
-        width: 90%;
+    .contacto1,
+    .formulario,
+    .resultado {
         padding: 20px;
-        font-size: 14px;
-        line-height: 1.5;
     }
 
-    .abajo video {
+    .contacto1 h1,
+    .resultado h1 {
+        font-size: 23px;
+    }
+
+    .contacto1 h2,
+    .formulario h2,
+    .resultado h2 {
+        font-size: 20px;
+    }
+
+    .formulario .enviar {
         width: 100%;
-    }
-
-    footer {
-        padding: 15px;
     }
 }
+
