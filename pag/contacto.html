@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+
+            <a href="./">
+                <img class="logo" src="../img/Outer Banks.png"
+                     alt="Logo de Outer Banks">
+            </a>
+            <a href="../index.html">INICIO</a>
+            <a href="../pag/sobrelaserie.html">SOBRE LA SERIE</a>
+            <a href="../pag/personajes.html">PERSONAJES</a>
+            <a href="../pag/temporadas.html">TEMPORADAS</a>
+            <a href="../pag/contacto.html">CONTACTO</a>
+
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="contacto">
+
+        <div class="contacto1">
+        <h1>Contacto</h1>
+
+        <p>
+            Este espacio estará destinado a comentarios,
+            consultas y opiniones sobre la serie Outer Banks.
+        </p>
+
+        <p>
+            Completá el formulario para dejarnos tu consulta, opinión o sugerencia sobre Outer Banks.
+        </p>
+
+        <h2>Seguinos</h2>
+
+        <p>
+            También podés encontrar información oficial de la serie
+            en sus redes sociales y en Netflix.
+        </p>
+
+        <a href="https://www.netflix.com/title/80236318" target="_blank">
+            Ver Outer Banks en Netflix
+        </a>
+
+    </div>
+
+
+    <form class="formulario" action="confirmacion.html" method="get">
+    <h2>Contactanos</h2>
+
+    <label for="nombre">Nombre:</label>
+    <input class="rectangulo" type="text"
+           id="nombre" name="nombre"
+           placeholder="Ingresá tu nombre" required>
+
+    <label for="apellido">Apellido:</label>
+    <input class="rectangulo" type="text"
+           id="apellido" name="apellido"
+           placeholder="Ingresá tu apellido" required>
+
+    <label for="email">Email:</label>
+    <input class="rectangulo" type="email"
+           id="email" name="email"
+           placeholder="ejemplo@correo.com" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input class="rectangulo" type="tel"
+           id="telefono" name="telefono"
+           placeholder="Ingresá tu teléfono">
+
+    <label for="motivo">Motivo:</label>
+    <select class="rectangulo" id="motivo" name="motivo" required>
+        <option value="">Seleccioná una opción</option>
+        <option value="consulta">Consulta sobre la serie</option>
+        <option value="opinion">Opinión</option>
+        <option value="sugerencia">Sugerencia</option>
+    </select>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea class="descripcion" id="mensaje" name="mensaje"
+              placeholder="Escribí tu mensaje" required></textarea>
+
+    <button class="enviar" type="submit">Enviar</button>
+    </form>
+
+</section>
+</main>
+
+<footer>
+        
+    <p>Outer Banks - Primer Parcial de Programación Web I</p>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,215 @@
+/*orbitron-<uniquifier> {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+body {
+    background-image: url(../img/fondo-header.png) ;
+    background-size: cover;
+    background-position: center;   
+    background-attachment: fixed;
+    color: rgba(255, 255, 255, 0.815);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+header {
+    padding: 1% 1%;
+    align-items: center;
+    font-family: "Orbitron", sans-serif;
+}
+
+.nav {
+    margin-left: auto;
+    display: flex;
+}
+
+.nav a {
+    margin: 0.5%;
+    font-size: 77%;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #ffc36b;
+}
+
+.logo {
+    width: 36%;
+    padding: 0% 3%
+}
+
+.inicio {
+    text-align: left;
+    padding: 5%;
+    font-family: "Orbitron", sans-serif;
+    animation: aparecer 2s;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.inicio p {
+    font-size: 93%;
+    line-height: 1.5;
+    width: 30%;
+    color: rgb(209, 209, 209);
+}
+
+.foto-obx {
+    text-align: right;
+    margin-top: -228px;
+    margin-right: 200px;
+}
+
+.foto-obx img {
+    width: 57px;
+}
+
+.sobre-serie {
+    background-color: rgba(2, 2, 2, 0.432);
+    width: 29%;
+    margin: auto;
+    padding: 20px;
+    font-family: "Helvetica", sans-serif;
+    font-size: 11.5px;
+    line-height: 1.18;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    
+}
+.abajo{
+    display: flex
+}
+.abajo video {
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+footer {
+    padding: 1px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.815);
+    color: white;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+
+
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+
+    .nav {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 130px;
+        padding: 0;
+    }
+
+    .inicio p {
+        width: 60%;
+    }
+
+    .foto-obx {
+        margin: 25px 0;
+        text-align: center;
+    }
+
+    .foto-obx img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .sobre-serie {
+        width: 75%;
+        box-sizing: border-box;
+    }
+
+    .abajo {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .abajo video {
+        width: 45%;
+        height: auto;
+        padding: 0;
+    }
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px;
+    }
+
+    .nav a:first-child {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav a {
+        margin: 0;
+        font-size: 11px;
+    }
+
+    .inicio {
+        padding: 30px 5%;
+    }
+
+    .inicio h1 {
+        font-size: 28px;
+    }
+
+    .inicio p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .sobre-serie {
+        width: 90%;
+        padding: 20px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .abajo video {
+        width: 100%;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
